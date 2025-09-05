@@ -111,7 +111,7 @@ const handleSubmit = async () => {
   formData.append("file", selectedFile);
 
   try {
-    const response = await fetch(`http://localhost:8001/predict/${diseaseType}/`, {
+    const response = await fetch(`https://hackwell-backend.onrender.com/predict/${diseaseType}/`, {
       method: "POST",
       body: formData,
     });
